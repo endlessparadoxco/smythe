@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smythe Hall Sign Out</title>
+    <style>
+        body {
+            background-color: #add8e6; /* Light blue color */
+            margin: 0;
+            padding: 0;
+        }
+        .app-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .user-section {
+            /* Add any additional styles for the user section */
+        }
+        .user {
+            margin-bottom: 20px; /* Add some space between users for better readability */
+        }
+        .dropdown-container {
+            margin-top: 10px; /* Add space above the dropdown for better spacing */
+        }
+    </style>
+    <link rel="stylesheet" href="~/css/app-site.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Smythe Hall Sign Out</h1>
+        </header>
+        <div class="user-section">
+
+            <!-- Repeat the user structure with the names -->
+            
+            <!-- User 1 -->
+            <div class="user">
+                <p class="user-name">Adams, Scout</p>
+                <div class="dropdown-container">
+                    <label for="locationAdams_Scout">Select Location:</label>
+                    <select id="locationAdams_Scout" onchange="sendMessage('Adams, Scout', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Repeat the above structure for the remaining users -->
+
+            <!-- User 2 -->
+            <div class="user">
+                <p class="user-name">Belt, Allison</p>
+                <div class="dropdown-container">
+                    <label for="locationBelt_Allison">Select Location:</label>
+                    <select id="locationBelt_Allison" onchange="sendMessage('Belt, Allison', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Continue adding users in a similar fashion -->
+            
+            <!-- User 3 -->
+            <div class="user">
+                <p class="user-name">Chen, Jiayi</p>
+                <div class="dropdown-container">
+                    <label for="locationChen_Jiayi">Select Location:</label>
+                    <select id="locationChen_Jiayi" onchange="sendMessage('Chen, Jiayi', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 4 -->
+            <div class="user">
+                <p class="user-name">Clauer, Joshlyn</p>
+                <div class="dropdown-container">
+                    <label for="locationClauer_Joshlyn">Select Location:</label>
+                    <select id="locationClauer_Joshlyn" onchange="sendMessage('Clauer, Joshlyn', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 5 -->
+            <div class="user">
+                <p class="user-name">Curio, Kathryn</p>
+                <div class="dropdown-container">
+                    <label for="locationCurio_Kathryn">Select Location:</label>
+                    <select id="locationCurio_Kathryn" onchange="sendMessage('Curio, Kathryn', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 6 -->
+            <div class="user">
+                <p class="user-name">Doerr, Kara</p>
+                <div class="dropdown-container">
+                    <label for="locationDoerr_Kara">Select Location:</label>
+                    <select id="locationDoerr_Kara" onchange="sendMessage('Doerr, Kara', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 7 -->
+            <div class="user">
+                <p class="user-name">Dondi, Rebecca</p>
+                <div class="dropdown-container">
+                    <label for="locationDondi_Rebecca">Select Location:</label>
+                    <select id="locationDondi_Rebecca" onchange="sendMessage('Dondi, Rebecca', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 8 -->
+            <div class="user">
+                <p class="user-name">Eigner, Brooke</p>
+                <div class="dropdown-container">
+                    <label for="locationEigner_Brooke">Select Location:</label>
+                    <select id="locationEigner_Brooke" onchange="sendMessage('Eigner, Brooke', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Add more users as needed -->
+
+            <!-- User 9 -->
+            <div class="user">
+                <p class="user-name">Flores, Alejandra</p>
+                <div class="dropdown-container">
+                    <label for="locationFlores_Alejandra">Select Location:</label>
+                    <select id="locationFlores_Alejandra" onchange="sendMessage('Flores, Alejandra', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 10 -->
+            <div class="user">
+                <p class="user-name">Gonzalez, Romina</p>
+                <div class="dropdown-container">
+                    <label for="locationGonzalez_Romina">Select Location:</label>
+                    <select id="locationGonzalez_Romina" onchange="sendMessage('Gonzalez, Romina', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 11 -->
+            <div class="user">
+                <p class="user-name">Gray, Lola</p>
+                <div class="dropdown-container">
+                    <label for="locationGray_Lola">Select Location:</label>
+                    <select id="locationGray_Lola" onchange="sendMessage('Gray, Lola', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 12 -->
+            <div class="user">
+                <p class="user-name">Haider-Shah, Inseeya</p>
+                <div class="dropdown-container">
+                    <label for="locationHaiderShah_Inseeya">Select Location:</label>
+                    <select id="locationHaiderShah_Inseeya" onchange="sendMessage('Haider-Shah, Inseeya', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 13 -->
+            <div class="user">
+                <p class="user-name">Harris, Dani</p>
+                <div class="dropdown-container">
+                    <label for="locationHarris_Dani">Select Location:</label>
+                    <select id="locationHarris_Dani" onchange="sendMessage('Harris, Dani', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 14 -->
+            <div class="user">
+                <p class="user-name">Herrera, Anette</p>
+                <div class="dropdown-container">
+                    <label for="locationHerrera_Anette">Select Location:</label>
+                    <select id="locationHerrera_Anette" onchange="sendMessage('Herrera, Anette', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 15 -->
+            <div class="user">
+                <p class="user-name">Jeanlouie, Sam</p>
+                <div class="dropdown-container">
+                    <label for="locationJeanlouie_Sam">Select Location:</label>
+                    <select id="locationJeanlouie_Sam" onchange="sendMessage('Jeanlouie, Sam', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 16 -->
+            <div class="user">
+                <p class="user-name">Jimenez, Rosa</p>
+                <div class="dropdown-container">
+                    <label for="locationJimenez_Rosa">Select Location:</label>
+                    <select id="locationJimenez_Rosa" onchange="sendMessage('Jimenez, Rosa', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 17 -->
+            <div class="user">
+                <p class="user-name">Jin, Xuan</p>
+                <div class="dropdown-container">
+                    <label for="locationJin_Xuan">Select Location:</label>
+                    <select id="locationJin_Xuan" onchange="sendMessage('Jin, Xuan', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 18 -->
+            <div class="user">
+                <p class="user-name">Jones, Kimberly</p>
+                <div class="dropdown-container">
+                    <label for="locationJones_Kimberly">Select Location:</label>
+                    <select id="locationJones_Kimberly" onchange="sendMessage('Jones, Kimberly', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 19 -->
+            <div class="user">
+                <p class="user-name">Lancione, Olivia</p>
+                <div class="dropdown-container">
+                    <label for="locationLancione_Olivia">Select Location:</label>
+                    <select id="locationLancione_Olivia" onchange="sendMessage('Lancione, Olivia', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 20 -->
+            <div class="user">
+                <p class="user-name">Le, Mai</p>
+                <div class="dropdown-container">
+                    <label for="locationLe_Mai">Select Location:</label>
+                    <select id="locationLe_Mai" onchange="sendMessage('Le, Mai', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 21 -->
+            <div class="user">
+                <p class="user-name">Mariscal, Grace</p>
+                <div class="dropdown-container">
+                    <label for="locationMariscal_Grace">Select Location:</label>
+                    <select id="locationMariscal_Grace" onchange="sendMessage('Mariscal, Grace', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 22 -->
+            <div class="user">
+                <p class="user-name">McAllister, Isabelle</p>
+                <div class="dropdown-container">
+                    <label for="locationMcAllister_Isabelle">Select Location:</label>
+                    <select id="locationMcAllister_Isabelle" onchange="sendMessage('McAllister, Isabelle', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 23 -->
+            <div class="user">
+                <p class="user-name">McKinley, Brielle</p>
+                <div class="dropdown-container">
+                    <label for="locationMcKinley_Brielle">Select Location:</label>
+                    <select id="locationMcKinley_Brielle" onchange="sendMessage('McKinley, Brielle', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 24 -->
+            <div class="user">
+                <p class="user-name">Obeso, Carlota</p>
+                <div class="dropdown-container">
+                    <label for="locationObeso_Carlota">Select Location:</label>
+                    <select id="locationObeso_Carlota" onchange="sendMessage('Obeso, Carlota', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 25 -->
+            <div class="user">
+                <p class="user-name">Oganisyan, Eli</p>
+                <div class="dropdown-container">
+                    <label for="locationOganisyan_Eli">Select Location:</label>
+                    <select id="locationOganisyan_Eli" onchange="sendMessage('Oganisyan, Eli', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 26 -->
+            <div class="user">
+                <p class="user-name">Rodrigues, Sarah</p>
+                <div class="dropdown-container">
+                    <label for="locationRodrigues_Sarah">Select Location:</label>
+                    <select id="locationRodrigues_Sarah" onchange="sendMessage('Rodrigues, Sarah', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 27 -->
+            <div class="user">
+                <p class="user-name">Skatrud, Eve</p>
+                <div class="dropdown-container">
+                    <label for="locationSkatrud_Eve">Select Location:</label>
+                    <select id="locationSkatrud_Eve" onchange="sendMessage('Skatrud, Eve', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 28 -->
+            <div class="user">
+                <p class="user-name">Wang, Regina</p>
+                <div class="dropdown-container">
+                    <label for="locationWang_Regina">Select Location:</label>
+                    <select id="locationWang_Regina" onchange="sendMessage('Wang, Regina', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 29 -->
+            <div class="user">
+                <p class="user-name">Yacoub, Abby</p>
+                <div class="dropdown-container">
+                    <label for="locationYacoub_Abby">Select Location:</label>
+                    <select id="locationYacoub_Abby" onchange="sendMessage('Yacoub, Abby', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User 30 -->
+            <div class="user">
+                <p class="user-name">Zhang, Jocelyn</p>
+                <div class="dropdown-container">
+                    <label for="locationZhang_Jocelyn">Select Location:</label>
+                    <select id="locationZhang_Jocelyn" onchange="sendMessage('Zhang, Jocelyn', this.value)">
+                        <option value="gym">Gym</option>
+                        <option value="mess_hall">Mess Hall</option>
+                        <option value="infirmary">Infirmary</option>
+                        <option value="academics">Academics</option>
+                        <option value="barracks">Barracks</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="~/js/app.js"></script>
+        <script>
+            function loadLastLocation(userName) {
+                const lastLocation = localStorage.getItem(userName);
+                if (lastLocation) {
+                    const dropdown = document.getElementById(`location${userName.replace(/[^a-zA-Z]/g, '_')}`);
+                    dropdown.value = lastLocation;
+                }
+            }
+
+            function sendMessage(userName, location) {
+                // Add logic to send a message with the user name and selected location
+                localStorage.setItem(userName, location);
+            }
+
+            // Load last selected locations on page load
+            loadLastLocation('Adams_Scout');
+            loadLastLocation('Belt_Allison');
+            loadLastLocation('Chen_Jiayi');
+            loadLastLocation('Clauer_Joshlyn');
+            loadLastLocation('Curio_Kathryn');
+            loadLastLocation('Doerr_Kara');
+            loadLastLocation('Dondi_Rebecca');
+            loadLastLocation('Eigner_Brooke');
+            loadLastLocation('Flores_Alejandra');
+            loadLastLocation('Gonzalez_Romina');
+            loadLastLocation('Gray_Lola');
+            loadLastLocation('HaiderShah_Inseeya');
+            loadLastLocation('Harris_Dani');
+            loadLastLocation('Herrera_Anette');
+            loadLastLocation('Jeanlouie_Sam');
+            loadLastLocation('Jimenez_Rosa');
+            loadLastLocation('Jin_Xuan');
+            loadLastLocation('Jones_Kimberly');
+            loadLastLocation('Lancione_Olivia');
+            loadLastLocation('Le_Mai');
+            loadLastLocation('Mariscal_Grace');
+            loadLastLocation('McAllister_Isabelle');
+            loadLastLocation('McKinley_Brielle');
+            loadLastLocation('Obeso_Carlota');
+            loadLastLocation('Oganisyan_Eli');
+            loadLastLocation('Rodrigues_Sarah');
+            loadLastLocation('Skatrud_Eve');
+            loadLastLocation('Wang_Regina');
+            loadLastLocation('Yacoub_Abby');
+            loadLastLocation('Zhang_Jocelyn');
+        </script>
+    </div>
+</body>
+</html>

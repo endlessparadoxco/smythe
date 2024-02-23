@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Smythe Hall Sign Out</title>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Smythe Hall Sign Out</h1>
+    </header>
+    <div class="user-section">
+      <div class="user">
+        <p class="user-name">Jeanlouie, Sam</p>
+        <div class="dropdown-container">
+          <label for="location1">Select Location:</label>
+          <select id="location1" onchange="sendMessage('Jeanlouie, Sam', this.value)">
+            <option value="gym">Gym</option>
+            <option value="mess_hall">Mess Hall</option>
+            <option value="infirmary">Infirmary</option>
+            <option value="academics">Academics</option>
+            <option value="barracks">Barracks</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Repeat the above structure for other users -->
+      <div class="user">
+        <p class="user-name">Mariscal, Grace</p>
+        <div class="dropdown-container">
+          <label for="location2">Select Location:</label>
+          <select id="location2" onchange="sendMessage('Mariscal, Grace', this.value)">
+            <option value="gym">Gym</option>
+            <option value="mess_hall">Mess Hall</option>
+            <option value="infirmary">Infirmary</option>
+            <option value="academics">Academics</option>
+            <option value="barracks">Barracks</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Repeat the above structure for the third user -->
+      <div class="user">
+        <p class="user-name">Jimenez, Rosa</p>
+        <div class="dropdown-container">
+          <label for="location3">Select Location:</label>
+          <select id="location3" onchange="sendMessage('Jimenez, Rosa', this.value)">
+            <option value="gym">Gym</option>
+            <option value="mess_hall">Mess Hall</option>
+            <option value="infirmary">Infirmary</option>
+            <option value="academics">Academics</option>
+            <option value="barracks">Barracks</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
